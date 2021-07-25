@@ -134,10 +134,10 @@
         <div class="description">
             <p><?php echo $row['descripcion'] ?></p>
         </div>
-        <form class="add" method="POST" action="product.php">
+        <form class="add" method="GET" action="product.php">
             <input type="hidden" name="id_product" value="<?php echo $row['id_producto'];?>">
             <input type="hidden" name="cantidad_product" value="<?php echo 1?>" />
-            <button type="submit" class="view" name="view_product">
+            <button type="submit" class="view">
                 Ver producto
                 <i class='bx bx-right-arrow-alt'></i>
             </button>
@@ -165,11 +165,11 @@
         <div class="description">
             <p><?php echo $row['descripcion'] ?></p>
         </div>
-        <form class="add" method="POST" action="product.php">
+        <form class="add" method="GET" action="product.php">
   
             <input type="hidden" name="id_product" value="<?php echo $row['id_producto'];?>">
-            <input type="hidden" name="cantidad_product" value="<?php echo 1?>" />
-            <button type="submit" class="view" name="view_product">
+            <input type="hidden" name="qty_product" value="<?php echo 1?>" />
+            <button type="submit" class="view">
                 Ver producto
                 <i class='bx bx-right-arrow-alt'></i>
             </button>

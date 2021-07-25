@@ -19,7 +19,7 @@ if(isset($_POST)){
             $id_client = NULL;
         }
         // $query = "INSERT INTO `carrito`(`id_cliente`, `id_producto`, `precio`, `cantidad`, `talla`) VALUES ('$id_client', '$id_product', '$price_product', '$qty_product', '$size') ";
-        $result = mysqli_query($conn, $query);
+        // $result = mysqli_query($conn, $query);
                 if(!isset($_SESSION['cart'])){
                     $product = array(
                         'id_client' => $id_client,
